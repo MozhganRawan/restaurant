@@ -72,13 +72,42 @@
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg shadow-sm">
-    <div class="container">
-      <a class="navbar-brand text-white fw-bold fs-3" href="index.html">
-        <span class="text-warning">Modern</span> <span class="text-success">Restaurant</span>
-      </a>
+ <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark shadow-sm py-3" data-bs-theme="dark">
+  <div class="container px-4">
+    <a class="navbar-brand fw-bold fs-3" href="#">
+      <span class="text-warning">Modern</span>
+        <img src="hhh.avif" alt="" width="50px" height="50px">
+      <span class="text-success">Restaurant </span>
+        </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-warning" id="offcanvasNavbarLabel">🍔 Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item px-2"><a class="nav-link" href="#home">🏠 Home</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="#restaurants">🍕 Restaurants</a></li>
+          <li class="nav-item px-2 dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="team.html">👨‍🍳 Team</a></li>
+              <li><a class="dropdown-item" href="services.html">🛎 Services</a></li>
+            </ul>
+          </li>
+          <li class="nav-item px-2"><a class="nav-link" href="#contact">📞 Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </nav>
+  </div>
+</nav>
+
+
   <section class="team-section">
     <div class="container">
       <h2 class="text-center mb-5">👨‍🍳 Meet Our Team</h2>
